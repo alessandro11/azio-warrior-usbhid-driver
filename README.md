@@ -1,3 +1,6 @@
+The code has been adapted from https://bitbucket.org/Swoogan/aziokbd to support
+multilazer warrior keyboard, layout abnt2, 95 keys
+
 # Linux Microdia Keyboard Chipset Driver #
 
 For Chipset `0x0c45`:`0x7603`
