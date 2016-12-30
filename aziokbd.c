@@ -39,8 +39,8 @@
 #define DRIVER_AUTHOR "Colin Svingen <swoogan@hotmail.com>"
 #define DRIVER_DESC "Azio L70 Keyboard Driver"
 #define DRIVER_LICENSE "GPL"
-#define ML_VENDOR_ID			0x0c45
-#define ML_PRODUCT_ID			0x7603
+#define ML_VENDOR_ID		0x0c45
+#define ML_PRODUCT_ID		0x7603
 #define ML_PRODUCT_WARRIOR_ID	0X760a
 
 MODULE_AUTHOR(DRIVER_AUTHOR);
@@ -52,6 +52,13 @@ MODULE_LICENSE(DRIVER_LICENSE);
 #else
 #define AZ_KEY_CONTESTED KEY_RIGHTBRACE
 #endif
+
+/*
+ * The map for few keys seems stranges:
+ * KEY_SEMICOLON = Ç
+ * KEY_RO = /
+ * KEY_SLASH = ;
+ */
 
 static const unsigned char az_kbd_keycode[256] = {
 		/* BEGIN 04 */
